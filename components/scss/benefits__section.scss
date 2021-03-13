@@ -1,0 +1,11 @@
+.benefits__section {
+  position: relative;
+  background: url(../../img/decor/pattern-leaf.png) left top 57% no-repeat;
+
+  &::before {
+    content: url(../../img/decor/choco-berry.png);
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+}

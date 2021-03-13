@@ -1,0 +1,35 @@
+.btn {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+}
+.btn--theme--white {
+  background: #fff;
+  color: #0b4d3c;
+}
+.btn--theme--white:hover {
+  background: #0b4d3c;
+  color: #fff;
+}
+.btn--theme--green {
+  background: #0b4d3c;
+  color: #fff;
+}
+.btn--theme--green:hover {
+  background: #fff;
+  color: #0b4d3c;
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #292929;
+  text-transform: none;
+}
+.btn--theme--transparent:hover {
+  color: #497870;
+}
