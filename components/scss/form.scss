@@ -72,6 +72,9 @@
 }
 
 .form__buttons {
+
+  @include phones {
   display: flex;
   justify-content: center;
+  }
 }
