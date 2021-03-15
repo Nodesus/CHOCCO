@@ -20,7 +20,7 @@
       bottom: rem(-90px);
     }
 
-    @include tablets {
+    @include phones {
       content: "";
     }
   }
