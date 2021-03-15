@@ -1,9 +1,16 @@
 $conteaierWidth: 942px;
 $baseFontSize: 18px;
 
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
 // colors
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
+
+@import "media";
 
 
 // normalize
@@ -16,6 +23,7 @@ $darkGreen: #0b4d3c;
 // components
 @import "hero";
 @import "header";
+@import "hamburger";
 @import "features";
 @import "feature";
 @import "btn";
@@ -30,3 +38,5 @@ $darkGreen: #0b4d3c;
 @import "form";
 @import "radio";
 @import "fixed-menu";
+@import "contacts";
+@import "footer";

@@ -4,39 +4,39 @@
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 .form__col:last-child {
   margin-right: 0;
 }
 
 .form__col {
-  margin-right: 27px;
+  margin-right: rem(27px);
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 .form__block:last-child {
   margin-right: 0;
 }
 
 .form__input {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: Open Sans;
   width: 100%;
-  padding: 18px 11px;
-  border: solid 3px transparent;
-  border-radius: 4%;
+  padding: rem(18px) rem(11px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(4px);
 }
 .form__input--textarea {
-  height: 180px;
+  height: rem(152px);
   resize: none;
 }
 .form__input:focus {
@@ -47,8 +47,4 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-}
-
-.form__buttons {
-  margin-top: 26px;
 }

@@ -2,10 +2,26 @@
   position: relative;
   background: url(../../img/decor/pattern-leaf.png) left top 57% no-repeat;
 
-  &::before {
+  @include tablets {
+    background: url(../../img/decor/pattern-leaf.png) left top 3% no-repeat;
+  }
+
+  @include phones {
+    background: none;
+  }
+
+  &:before {
     content: url(../../img/decor/choco-berry.png);
     position: absolute;
-    bottom: -80px;
+    bottom: rem(-80px);
     left: 0;
+    
+    @include tablets {
+      bottom: rem(-90px);
+    }
+
+    @include tablets {
+      content: "";
+    }
   }
 }

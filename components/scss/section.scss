@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 652px;
+  min-height: rem(652px);
 
   &--font-color--green {
-    color: $darkGreen;
+    color: #497870;
 
     .section__title {
       color: inherit;
@@ -15,10 +15,18 @@
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
   text-align: center;
   text-transform: uppercase;
   color: #292929;
+
+  &--green {
+    color: #365A49;
+  }
+
+  @include phones {
+    font-size: rem(40px);
+  }
 }

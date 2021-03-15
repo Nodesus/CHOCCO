@@ -17,9 +17,9 @@
   display: none;
 }
 .benefits__item:before {
-  content: url(../img/decor/separator.png);
+  content: url(../../img/decor/separator.png);
   position: absolute;
-  top: 30px;
+  top: rem(55px);
   right: 0;
   transform: translateX(50%);
 }

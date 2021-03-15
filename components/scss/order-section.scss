@@ -1,18 +1,36 @@
 .order-section {
   background-image: url(../../img/decor/order-bg.png);
   background-size: cover;
-  
+}
+
+.order__container {
+
+  @include tablets {
+    padding: 0 rem(136px);
+  }
+
+  @include phones {
+    padding: 0;
+  }
+
   &:before {
     position: absolute;
-    bottom: 69px;
-    left: 3%;
+    bottom: rem(-10px);
+    left: -4%;
     content: url(../../img/decor/order-small-berry.png);
   }
 
   &:after {
     position: absolute;
-    bottom: 58px;
-    right: 0.5%;
-    content: url(../../img/decor/order-leaf.png),
+    bottom: rem(-35px);
+    right: 0%;
+    content: url(../../img/decor/order-leaf.png);
+  }
+
+  &:before, &:after {
+    
+    @include tablets {
+      display: none;
+    }
   }
 }
