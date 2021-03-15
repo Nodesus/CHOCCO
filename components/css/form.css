@@ -44,8 +44,7 @@
   outline: none;
 }
 
-@media screen and (max-width: 480px) {
-  .form__buttons {
-    display: flex;
-    justify-content: center;
-  }
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
