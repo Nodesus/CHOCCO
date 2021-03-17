@@ -1,0 +1,55 @@
+.footer {
+  font-size: rem(21px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: rem(17px) 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.address {
+  font-style: normal;
+  text-decoration: none;
+  line-height: rem(24px);
+
+  @include phones {
+    margin-bottom: rem(6px);
+  }
+}
+
+.phone-number {
+
+  @include phones {
+    padding: 6% 19%;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  @include phones {
+    margin-bottom: 17px;
+  }
+}
+
+.socials__item {
+  margin-right: rem(14px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
