@@ -1,5 +1,9 @@
 .form {
   display: flex;
+
+  &__error {
+    color: red;
+  }
   
   @include tablets {
     flex-direction: column;
@@ -46,6 +50,14 @@
   padding: rem(18px) rem(12px);
   border: solid rem(3px) transparent;
   border-radius: rem(4px);
+
+  &__error {
+    border: 1px solid red;
+  }
+
+  @include tablets {
+  padding: rem(8px) rem(12px);
+  }
 
   &--textarea {
     height: rem(158px);

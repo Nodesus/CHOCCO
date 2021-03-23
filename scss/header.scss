@@ -66,11 +66,17 @@
 }
 
 .phone-number__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(14px);
+  height: rem(14px);
   flex-shrink: 0;
+  margin-right: rem(5px);
 }
 
 .phone-number__icon-elem {
-  width: rem(14px);
-  height: rem(14px);
-  margin-right: rem(5px);
+  max-width: 100%;
+  max-height: 100%;
 }

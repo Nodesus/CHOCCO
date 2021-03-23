@@ -172,7 +172,7 @@ img {
   }
   .hero__title-section:before {
     content: "";
-    background: url(../img/decor/chocco-comp.png) no-repeat;
+    background: url(../img/decor/chocco-comp.png) center center/contain no-repeat;
     margin-bottom: 0.8888888889rem;
     width: 26.1111111111rem;
     height: 26.6666666667rem;
@@ -304,13 +304,19 @@ img {
 }
 
 .phone-number__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   flex-shrink: 0;
+  margin-right: 0.2777777778rem;
 }
 
 .phone-number__icon-elem {
-  width: 0.7777777778rem;
-  height: 0.7777777778rem;
-  margin-right: 0.2777777778rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .hamburger {
@@ -355,7 +361,17 @@ img {
 
 .feature__icon {
   width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0.3888888889rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke: red;
 }
 
 .feature__text {
@@ -792,6 +808,9 @@ img {
 .form {
   display: flex;
 }
+.form__error {
+  color: red;
+}
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
@@ -837,6 +856,14 @@ img {
   padding: 1rem 0.6666666667rem;
   border: solid 0.1666666667rem transparent;
   border-radius: 0.2222222222rem;
+}
+.form__input__error {
+  border: 1px solid red;
+}
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.4444444444rem 0.6666666667rem;
+  }
 }
 .form__input--textarea {
   height: 8.7777777778rem;

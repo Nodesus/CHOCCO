@@ -82,7 +82,7 @@
 
     &:before {
       content: '';
-      background: url(../img/decor/chocco-comp.png) no-repeat;
+      background: url(../img/decor/chocco-comp.png) center center / contain no-repeat;
       margin-bottom: rem(16px);
       width: rem(470px);
       height: rem(480px);
