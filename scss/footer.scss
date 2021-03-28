@@ -30,7 +30,7 @@
   }
 }
 
-.phone-number {
+.footer__phone-number {
 
   @include phones {
     padding: 6% 19%;
@@ -47,9 +47,16 @@
 }
 
 .socials__item {
+  max-width: rem(24px);
+  max-height: rem(24px);
   margin-right: rem(14px);
+  fill: #B3B3B3;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    fill: black;
   }
 }

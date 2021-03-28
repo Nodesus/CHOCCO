@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  transition: color .3s;
 
   &:hover {
     color: #497870;
@@ -79,4 +80,9 @@
 .phone-number__icon-elem {
   max-width: 100%;
   max-height: 100%;
+  fill: #fff;
+
+  &--active {
+    fill: #497870;
+  }
 }

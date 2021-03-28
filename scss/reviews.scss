@@ -36,6 +36,7 @@
   overflow: hidden;
   position: relative;
   margin-bottom: rem(15px);
+  min-height: rem(280px);
 
   @include phones {
     background: #F8FAF9 url(../img/decor/drawn-berry.png) right top 10% no-repeat;
@@ -57,11 +58,19 @@
 
 .reviews__display-inner {
   display: flex;
+  position: absolute;
+  opacity: 0;
 
   @include tablets {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  &.active {
+    position: static;
+    pointer-events: unset;
+    opacity: 1;
   }
 }
 
