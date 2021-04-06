@@ -1145,7 +1145,7 @@ img {
 .slider__section:before {
   content: "";
   position: absolute;
-  background: url(/img/decor/leaf-3.png) right/contain no-repeat;
+  background: url(../img/decor/leaf-3.png) right/contain no-repeat;
   top: 80%;
   right: 0%;
   width: 8.4444444444rem;
@@ -1154,7 +1154,7 @@ img {
 .slider__section:after {
   content: "";
   position: absolute;
-  background: url(/img/decor/blueberry.png) right/contain no-repeat;
+  background: url(../img/decor/blueberry.png) right/contain no-repeat;
   top: 90%;
   right: 0%;
   width: 5.7777777778rem;
