@@ -1,22 +1,66 @@
 .hamburger {
-  width: 26px;
-  height: 24px;
+  width: rem(28px);
+  height: rem(24px);
+  position: relative;
+  margin: 10px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 300;
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
 
   @include tablets {
-    display: inline-flex;
-  }
+    display: block;
+    right: 5%;
 
-  @include phones {
-    display: inline-flex;
+    &.open {
+      position: fixed;
+    }
   }
 }
 
-.hamburger__plank {
+.hamburger span {
   display: block;
-  background: #fff;
+  position: absolute;
   height: 4px;
-  border-radius: 10px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(4) {
+  top: 18px;
+}
+
+.hamburger.open span:nth-child(1) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(4) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
 }

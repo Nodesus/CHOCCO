@@ -18,3 +18,9 @@ $(".interactive-avatar__link").click(e => {
   itemToShow.addClass("active").siblings().removeClass("active");
   curItem.addClass("active").siblings().removeClass("active");
 });
+
+$(document).ready(function(e){
+	$('.team__title').click(function(){
+		$(this).toggleClass('team__title--active');
+	});
+});

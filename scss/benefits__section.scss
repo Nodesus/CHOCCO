@@ -18,6 +18,7 @@
     left: 0;
     width: rem(161px);
     height: rem(300px);
+    z-index: 1;
     
     @include phones {
       background: none;
