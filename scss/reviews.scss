@@ -1,6 +1,13 @@
 .reviews-section {
   position: relative;
 
+  background: url(../img/decor/strawberry.png) right 3% top 4% no-repeat;
+
+  @include phones {
+    background: url(../img/decor/strawberry.png) right -2% top 1% contain no-repeat;
+    background-size: 30%;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -19,14 +26,6 @@
     background: url(../img/decor/berry1.png) center center / contain no-repeat;
     width: rem(136px);
     height: rem(194px);
-  }
-}
-
-.container__reviews {
-  background: url(../img/decor/strawberry.png) right top no-repeat;
-
-  @include phones {
-    background: url(../img/decor/strawberry.png) right -2% top 1% contain no-repeat;
   }
 }
 

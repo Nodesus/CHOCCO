@@ -16,7 +16,7 @@
   <div class="wrapper">
     <div class="maincontent">
 
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <a href="#" class="logo">
@@ -25,25 +25,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#" data-sctoll-to="benefits" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                  <a href="#" data-sctoll-to="slider" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#" data-sctoll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#" data-sctoll-to="products" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#" data-sctoll-to="reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#" data-sctoll-to="#" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#" data-sctoll-to="contacts" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -71,7 +71,7 @@
             <div class="hero__title-desc">
               Наши батончики идеально подходят для тех, кто следит за своим здоровьем
             </div>
-            <a href="#" class="btn btn--theme--white">Заказать</a>
+            <a href="#" data-sctoll-to="order" class="btn btn--theme--white">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -110,7 +110,7 @@
         </div>
       </section>
 
-      <section class="section benefits__section">
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits__section">
         <div class="container benefits__container">
           <div class="headline">
             <h2 class="section__title headline__title">
@@ -186,7 +186,7 @@
         </div>
       </section>
 
-      <section class="section slider__section">
+      <section data-sidemenu-theme="black" data-section-id="slider" class="section slider__section">
         <div class="container slider__container">
           <div class="slider__controls">
             <a href="#" class="slider__btn slider__btn-left">
@@ -285,48 +285,48 @@
                       </div>
                     </div>
                   </div>
-                      <div class="slide__desc">
-                        <div class="slide__title-wrap">
-                          <h2 class="slide__title">
-                            Батончик "Гранола виноград 1"
-                          </h2>
-                        </div>
-                        <div class="slide__desc-text">
-                          <p>
-                            Гранола из винограда, грецкого ореха и кунжутных семечек.
-                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.
-                          </p>
-                        </div>
-                        <div class="slide__values">
-                          <div class="slide__values-row">
-                            <div class="slide__values-row ccal-row">
-                              <div class="slide__values-label">
-                                Калорийность
-                              </div>
-                              <div class="slide__values-number">
-                                110 ккал
-                              </div>
-                            </div>
-                            <div class="slide__values-row weigth-row">
-                              <div class="slide__values-label">
-                                Вес
-                              </div>
-                              <div class="slide__values-number">
-                                95 грамм
-                              </div>
-                            </div>
+                  <div class="slide__desc">
+                    <div class="slide__title-wrap">
+                      <h2 class="slide__title">
+                        Батончик "Гранола виноград 1"
+                      </h2>
+                    </div>
+                    <div class="slide__desc-text">
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек.
+                        В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <div class="slide__values">
+                      <div class="slide__values-row">
+                        <div class="slide__values-row ccal-row">
+                          <div class="slide__values-label">
+                            Калорийность
                           </div>
-                          <div class="slide__value-row">
-                            <div class="slide__price">
-                              140 ₽
-                            </div>
-                            <a href="#" class="slide__btn btn btn--theme--dark">
-                              Заказать
-                            </a>
+                          <div class="slide__values-number">
+                            110 ккал
+                          </div>
+                        </div>
+                        <div class="slide__values-row weigth-row">
+                          <div class="slide__values-label">
+                            Вес
+                          </div>
+                          <div class="slide__values-number">
+                            95 грамм
                           </div>
                         </div>
                       </div>
+                      <div class="slide__value-row">
+                        <div class="slide__price">
+                          140 ₽
+                        </div>
+                        <a href="#" data-sctoll-to="order" class="slide__btn btn btn--theme--dark">
+                          Заказать
+                        </a>
+                      </div>
                     </div>
+                  </div>
+                </div>
               </li>
               <li class="slider__item slide">
                 <div class="slider__pic">
@@ -411,48 +411,48 @@
                       </div>
                     </div>
                   </div>
-                      <div class="slide__desc">
-                        <div class="slide__title-wrap">
-                          <h2 class="slide__title">
-                            Батончик "Гранола виноград 2"
-                          </h2>
-                        </div>
-                        <div class="slide__desc-text">
-                          <p>
-                            Гранола из винограда, грецкого ореха и кунжутных семечек.
-                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.
-                          </p>
-                        </div>
-                        <div class="slide__values">
-                          <div class="slide__values-row">
-                            <div class="slide__values-row ccal-row">
-                              <div class="slide__values-label">
-                                Калорийность
-                              </div>
-                              <div class="slide__values-number">
-                                110 ккал
-                              </div>
-                            </div>
-                            <div class="slide__values-row weigth-row">
-                              <div class="slide__values-label">
-                                Вес
-                              </div>
-                              <div class="slide__values-number">
-                                95 грамм
-                              </div>
-                            </div>
+                  <div class="slide__desc">
+                    <div class="slide__title-wrap">
+                      <h2 class="slide__title">
+                        Батончик "Гранола виноград 2"
+                      </h2>
+                    </div>
+                    <div class="slide__desc-text">
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек.
+                        В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <div class="slide__values">
+                      <div class="slide__values-row">
+                        <div class="slide__values-row ccal-row">
+                          <div class="slide__values-label">
+                            Калорийность
                           </div>
-                          <div class="slide__value-row">
-                            <div class="slide__price">
-                              140 ₽
-                            </div>
-                            <a href="#" class="slide__btn btn btn--theme--dark">
-                              Заказать
-                            </a>
+                          <div class="slide__values-number">
+                            110 ккал
+                          </div>
+                        </div>
+                        <div class="slide__values-row weigth-row">
+                          <div class="slide__values-label">
+                            Вес
+                          </div>
+                          <div class="slide__values-number">
+                            95 грамм
                           </div>
                         </div>
                       </div>
+                      <div class="slide__value-row">
+                        <div class="slide__price">
+                          140 ₽
+                        </div>
+                        <a href="#" data-sctoll-to="order" class="slide__btn btn btn--theme--dark">
+                          Заказать
+                        </a>
+                      </div>
                     </div>
+                  </div>
+                </div>
               </li>
               <li class="slider__item slide">
                 <div class="slider__pic">
@@ -537,55 +537,55 @@
                       </div>
                     </div>
                   </div>
-                      <div class="slide__desc">
-                        <div class="slide__title-wrap">
-                          <h2 class="slide__title">
-                            Батончик "Гранола виноград 3"
-                          </h2>
-                        </div>
-                        <div class="slide__desc-text">
-                          <p>
-                            Гранола из винограда, грецкого ореха и кунжутных семечек.
-                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.
-                          </p>
-                        </div>
-                        <div class="slide__values">
-                          <div class="slide__values-row">
-                            <div class="slide__values-row ccal-row">
-                              <div class="slide__values-label">
-                                Калорийность
-                              </div>
-                              <div class="slide__values-number">
-                                110 ккал
-                              </div>
-                            </div>
-                            <div class="slide__values-row weigth-row">
-                              <div class="slide__values-label">
-                                Вес
-                              </div>
-                              <div class="slide__values-number">
-                                95 грамм
-                              </div>
-                            </div>
+                  <div class="slide__desc">
+                    <div class="slide__title-wrap">
+                      <h2 class="slide__title">
+                        Батончик "Гранола виноград 3"
+                      </h2>
+                    </div>
+                    <div class="slide__desc-text">
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек.
+                        В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <div class="slide__values">
+                      <div class="slide__values-row">
+                        <div class="slide__values-row ccal-row">
+                          <div class="slide__values-label">
+                            Калорийность
                           </div>
-                          <div class="slide__value-row">
-                            <div class="slide__price">
-                              140 ₽
-                            </div>
-                            <a href="#" class="slide__btn btn btn--theme--dark">
-                              Заказать
-                            </a>
+                          <div class="slide__values-number">
+                            110 ккал
+                          </div>
+                        </div>
+                        <div class="slide__values-row weigth-row">
+                          <div class="slide__values-label">
+                            Вес
+                          </div>
+                          <div class="slide__values-number">
+                            95 грамм
                           </div>
                         </div>
                       </div>
+                      <div class="slide__value-row">
+                        <div class="slide__price">
+                          140 ₽
+                        </div>
+                        <a href="#" data-sctoll-to="order" class="slide__btn btn btn--theme--dark">
+                          Заказать
+                        </a>
+                      </div>
                     </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="section team__section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team__section">
         <div class="container team__container">
           <div class="section__title">
             Команда
@@ -724,7 +724,77 @@
         </div>
       </section>
 
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="white" data-section-id="products" class="section products-menu-section">
+        <div class="container products-menu__container">
+          <h1 class="section__title products-menu-section__title">
+            Меню
+          </h1>
+          <ul class="products-menu">
+            <li class="products-menu__item">
+              <a href="" class="products-menu__title">
+                <img src="/img/decor/bar-item1.png" alt="img" class="products-menu__image">
+                <div class="products-menu__text">
+                  Батончики с молоком
+                </div>
+                <div class="products-menu__content">
+                  <div class="products-menu__holder">
+                    <button class="products-menu__close">
+                    </button>
+                    <div class="products-menu__content-text">
+                      Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                      полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                      классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не
+                      похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products-menu__item">
+              <a href="" class="products-menu__title">
+                <img src="/img/decor/bar-item1.png" alt="img" class="products-menu__image">
+                <div class="products-menu__text">
+                  Батончики с молоком
+                </div>
+                <div class="products-menu__content">
+                  <div class="products-menu__holder">
+                    <button class="products-menu__close">
+                    </button>
+                    <div class="products-menu__content-text">
+                      Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                      полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                      классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не
+                      похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products-menu__item">
+              <a href="" class="products-menu__title">
+                <img src="/img/decor/bar-item1.png" alt="img" class="products-menu__image">
+                <div class="products-menu__text">
+                  Батончики с молоком
+                </div>
+                <div class="products-menu__content">
+                  <div class="products-menu__holder">
+                    <button class="products-menu__close">
+                    </button>
+                    <div class="products-menu__content-text">
+                      Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                      полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                      классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не
+                      похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
         <div class="container container__reviews">
           <h2 class="section__title">
             Отзывы
@@ -816,7 +886,8 @@
         </div>
       </section>
 
-      <section class="section order-section section--font-color--green">
+      <section data-sidemenu-theme="white" data-section-id="order"
+        class="section order-section section--font-color--green">
         <div class="container order__container">
           <h2 class="section__title section__title--green">
             Закажите доставку
@@ -918,9 +989,9 @@
         </div>
       </section>
 
-      <section class="section contacts__section">
-        <div class="container">
-          <div class="map"></div>
+      <section data-sidemenu-theme="black" data-section-id="contacts" class="section contacts__section">
+        <div class="container contacts__container">
+          <div class="map" id="map"></div>
         </div>
 
         <footer class="footer">
@@ -979,31 +1050,31 @@
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="hero" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="benefits" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="slider" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="team" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="products" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="#" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="form" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="contacts" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
@@ -1024,11 +1095,20 @@
   <script src="./js/jquery-min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
+    integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/tabs.js"></script>
   <script src="./js/vertical.js"></script>
   <script src="./js/hamburger.js"></script>
+  <script src="./js/menu-acco.js"></script>
+  <script src="./js/ops.js"></script>
+  <script src="./js/map.js"></script>
+
 
 </body>
 
