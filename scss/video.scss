@@ -31,7 +31,7 @@
   &.paused .video__player-start {
     &:before {
       content: '';
-      background: url(../../img/svg/pause.svg) center center / contain no-repeat;
+      background: url(/CHOCCO/img/svg/pause.svg) center center / contain no-repeat;
       position: absolute;
       display: block;
       width: 20px;
