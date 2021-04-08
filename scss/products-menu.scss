@@ -48,7 +48,7 @@
   z-index: 1;
   transform: rotate(180deg);
   position: absolute;
-  align-self: center;
+  align-self: flex-end;
   padding-top: rem(39px);
 }
 
@@ -61,13 +61,41 @@
 }
 
 .products-menu__holder {
-  padding: 40px 73px 45px 26px;
+  padding: rem(76px) rem(40px) rem(76px) rem(44px);
+
+  @include tablets {
+    padding: rem(40px);
+  }
+
+  @include phones {
+    padding: rem(20px);
+  }
 }
 
 .products-menu__close {
+  cursor: pointer;
   position: absolute;
-  top: rem(20px);
-  right: rem(25px);
+  top: 3%;
+  right: 18%;
   border: none;
+  outline: none;
   background: transparent;
+}
+
+.products-menu__close:before,
+.products-menu__close:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: rgb(255, 255, 255);
+  border: none;
+}
+
+.products-menu__close:before {
+  transform: rotate(45deg);
+}
+
+.products-menu__close:after {
+  transform: rotate(-45deg);
 }

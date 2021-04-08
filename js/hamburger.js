@@ -10,3 +10,8 @@ $(document).ready(function(e){
 		$(this).toggleClass('open');
 	});
 });
+
+$('.menu__link').on('click', function () {
+  $(".hamburger").removeClass('open');
+  $(".menu").removeClass('menu--active');
+});

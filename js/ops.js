@@ -44,7 +44,7 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 const performTransition = sectionEq => {
   if (inScroll) return;
 
-  const transitionOver = 1000;
+  const transitionOver = 200;
   const mouseInertiaOver = 300;
 
   inScroll = true;
@@ -133,11 +133,19 @@ if (isMobile) {
     swipe: function (event, direction) {
       const scroller = viewportScroller();
       let scrollDirection = "";
+      let isVerticalScroll = false;
 
-      if (direction == "up") scrollDirection = "next";
-      if (direction == "down") scrollDirection = "prev";
-
-      scroller[scrollDirection]();
+      if (direction == "up") {
+        scrollDirection = "next";
+        isVerticalScroll = true;
+      };
+      if (direction == "down") {
+        scrollDirection = "prev";
+        isVerticalScroll = true;
+      };
+      if (isVerticalScroll) {
+        scroller[scrollDirection]();
+      };
     }
   });
 };

@@ -1,3 +1,16 @@
+.team__section {
+  &:before {
+    content: "";
+    position: absolute;
+    background: url(../img/decor/strawberry-2-team.png) left bottom / contain no-repeat;
+    width: rem(104px);
+    height: rem(114px);
+    z-index: 100;
+    left: 4%;
+    bottom: -305%
+  }
+}
+
 .team {
   display: flex;
   align-items: flex-start;

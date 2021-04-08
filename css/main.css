@@ -1179,7 +1179,7 @@ img {
   content: "";
   position: absolute;
   background: url(../img/decor/blueberry.png) right/contain no-repeat;
-  top: 90%;
+  top: 97%;
   right: 0%;
   width: 5.7777777778rem;
   height: 4.7777777778rem;
@@ -1370,6 +1370,17 @@ img {
   opacity: 1;
 }
 
+.team__section:before {
+  content: "";
+  position: absolute;
+  background: url(../img/decor/strawberry-2-team.png) left bottom/contain no-repeat;
+  width: 5.7777777778rem;
+  height: 6.3333333333rem;
+  z-index: 100;
+  left: 4%;
+  bottom: -305%;
+}
+
 .team {
   display: flex;
   align-items: flex-start;
@@ -1552,7 +1563,7 @@ img {
   z-index: 1;
   transform: rotate(180deg);
   position: absolute;
-  align-self: center;
+  align-self: flex-end;
   padding-top: 2.1666666667rem;
 }
 
@@ -1565,13 +1576,43 @@ img {
 }
 
 .products-menu__holder {
-  padding: 40px 73px 45px 26px;
+  padding: 4.2222222222rem 2.2222222222rem 4.2222222222rem 2.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .products-menu__holder {
+    padding: 2.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-menu__holder {
+    padding: 1.1111111111rem;
+  }
 }
 
 .products-menu__close {
+  cursor: pointer;
   position: absolute;
-  top: 1.1111111111rem;
-  right: 1.3888888889rem;
+  top: 3%;
+  right: 18%;
   border: none;
+  outline: none;
   background: transparent;
+}
+
+.products-menu__close:before,
+.products-menu__close:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: white;
+  border: none;
+}
+
+.products-menu__close:before {
+  transform: rotate(45deg);
+}
+
+.products-menu__close:after {
+  transform: rotate(-45deg);
 }
