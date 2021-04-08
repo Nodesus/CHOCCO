@@ -12,13 +12,12 @@
   align-items: center;
 
   @include tablets {
-    width: rem(594px);
+    width: 90%;
     height: rem(352px);
   }
 
   @include phones {
-    width: rem(394px);
-    height: rem(232px);
+    width: 100%;
   }
 }
 
@@ -46,6 +45,12 @@
   }
 }
 
+.video__player-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .video__player-splash {
   content: url(../img/decor/splash.png);
   position: absolute;
@@ -58,7 +63,7 @@
 .video__player-controls {
   background: #404040;
   position: absolute;
-  width: rem(660px);
+  width: 100%;
   height: rem(34px);
   display: inline-flex;
   flex-direction: row;
@@ -99,7 +104,7 @@
   display: block;
   position: relative;
   height: rem(16px);
-  width: rem(446px);
+  width: 68%;
   top: 26%;
   left: 10%;
   z-index: 2;

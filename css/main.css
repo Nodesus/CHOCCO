@@ -1632,14 +1632,13 @@ img {
 }
 @media screen and (max-width: 768px) {
   .video__wrapper {
-    width: 33rem;
+    width: 90%;
     height: 19.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
   .video__wrapper {
-    width: 21.8888888889rem;
-    height: 12.8888888889rem;
+    width: 100%;
   }
 }
 
@@ -1663,6 +1662,12 @@ img {
   display: none;
 }
 
+.video__player-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .video__player-splash {
   content: url(../img/decor/splash.png);
   position: absolute;
@@ -1675,7 +1680,7 @@ img {
 .video__player-controls {
   background: #404040;
   position: absolute;
-  width: 36.6666666667rem;
+  width: 100%;
   height: 1.8888888889rem;
   display: inline-flex;
   flex-direction: row;
@@ -1715,7 +1720,7 @@ img {
   display: block;
   position: relative;
   height: 0.8888888889rem;
-  width: 24.7777777778rem;
+  width: 68%;
   top: 26%;
   left: 10%;
   z-index: 2;
