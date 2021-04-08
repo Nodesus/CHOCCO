@@ -40,7 +40,7 @@
                   <a href="#" data-sctoll-to="reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" data-sctoll-to="#" class="menu__link">Как мы работаем</a>
+                  <a href="#" data-sctoll-to="video" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
                   <a href="#" data-sctoll-to="contacts" class="menu__link">Контакты</a>
@@ -724,6 +724,32 @@
         </div>
       </section>
 
+      <section data-sidemenu-theme="black" data-section-id="video" class="section video__section">
+        <div class="container video__container">
+          <h2 class="video__title section__title">
+            Как мы работаем
+          </h2>
+          <div class="video__wrapper">
+            <div class="video__player active">
+              <div class="video__player-wrapper">
+                <div id="yt-player" class="video__player-elem"></div>
+                <div class="video__player-splash"></div>
+              </div>
+              <div class="video__player-controls">
+                <button class="video__player-start"></button>
+                <div class="video__player-playback">
+                  <button class="video__player-playback-button"></button>
+                </div>
+                <div class="video__player-duration">
+                  <span class="video__player-duration-complited">0:00</span>
+                  <span class="video__player-duration-estimate">0:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section data-sidemenu-theme="white" data-section-id="products" class="section products-menu-section">
         <div class="container products-menu__container">
           <h1 class="section__title products-menu-section__title">
@@ -732,7 +758,7 @@
           <ul class="products-menu">
             <li class="products-menu__item">
               <a href="" class="products-menu__title">
-                <img src="/CHOCCO/img/decor/bar-item1.png" alt="img" class="products-menu__image">
+                <img src="/img/decor/bar-item1.png" alt="img" class="products-menu__image">
                 <div class="products-menu__text">
                   Батончики с молоком
                 </div>
@@ -752,7 +778,7 @@
             </li>
             <li class="products-menu__item">
               <a href="" class="products-menu__title">
-                <img src="/CHOCCO/img/decor/bar-item2.png" alt="img" class="products-menu__image">
+                <img src="/img/decor/bar-item2.png" alt="img" class="products-menu__image">
                 <div class="products-menu__text">
                   С мёдом и фруктами
                 </div>
@@ -772,7 +798,7 @@
             </li>
             <li class="products-menu__item">
               <a href="" class="products-menu__title">
-                <img src="/CHOCCO/img/decor/bar-item3.png" alt="img" class="products-menu__image">
+                <img src="/img/decor/bar-item3.png" alt="img" class="products-menu__image">
                 <div class="products-menu__text">
                   Дикие ягоды
                 </div>
@@ -1068,7 +1094,7 @@
         <a href="#" data-sctoll-to="reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" data-sctoll-to="#" class="fixed-menu__link"></a>
+        <a href="#" data-sctoll-to="video" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
         <a href="#" data-sctoll-to="form" class="fixed-menu__link"></a>
@@ -1094,12 +1120,16 @@
 
   <script src="./js/jquery-min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
     integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./js/video-yt.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/tabs.js"></script>
