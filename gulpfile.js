@@ -65,7 +65,7 @@ task('scripts', () => {
 });
 
 task('icons', () => {
-  return src('./sprites.svg')
+  return src('./*.svg')
     .pipe(svgo({
       plugins: [
         {
