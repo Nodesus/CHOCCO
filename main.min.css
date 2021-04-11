@@ -351,7 +351,7 @@ template {
       background: none; } }
   .benefits__section:before {
     content: '';
-    background: url(/CHOCCOimg/decor/choco-berry.png) center center/contain no-repeat;
+    background: url(/CHOCCO/img/decor/choco-berry.png) center center/contain no-repeat;
     position: absolute;
     bottom: -5rem;
     left: 0;
