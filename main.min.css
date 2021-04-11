@@ -345,7 +345,7 @@ template {
   background: url(/CHOCCO/img/decor/pattern-leaf.png) left top 57% no-repeat; }
   @media screen and (max-width: 768px) {
     .benefits__section {
-      background: url(/CHOCCOimg/decor/pattern-leaf.png) left top 3% no-repeat; } }
+      background: url(/CHOCCO/img/decor/pattern-leaf.png) left top 3% no-repeat; } }
   @media screen and (max-width: 480px) {
     .benefits__section {
       background: none; } }
