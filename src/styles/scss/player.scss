@@ -1,0 +1,169 @@
+.player {
+  width: rem(662px);
+  display: block;
+  position: relative;
+
+  &.player__active {
+    &>.player__controls>.player__start {
+      height: 15px;
+      background: transparent;
+      border-color: #fff;
+      will-change: border-width;
+      cursor: pointer;
+      border-style: double;
+      border-width: 0px 0px 0px 14px;
+    }
+  }
+}
+
+.player__video {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.player__controls {
+  width: 100%;
+  height: rem(40px);
+  background-color: #404040;
+  position: absolute;
+  bottom: 0%;
+  align-items: center;
+  padding: rem(10px) rem(20px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.player__start {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 14px solid #404040;
+  border-right-width: 0;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  border-left-color: #fff;
+  padding: 0;
+  border-radius: 10%;
+  outline: none;
+  margin: 0 auto;
+  left: 4%;
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+
+  @include phones {
+    top: 18%;
+  }
+}
+
+.player__playback {
+  position: relative;
+  width: rem(446px);
+  height: rem(6px);
+  background: linear-gradient(to right,
+      #497870 0%, #333 0%);
+  margin-left: rem(60px);
+  border-radius: 10px;
+  top: 6%;
+  cursor: pointer;
+}
+
+.player__playback-line {
+  position: relative;
+  width: 0;
+  height: 100%;
+  background: #497870;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.player__playback-button {
+  width: rem(10px);
+  height: rem(10px);
+  top: -2px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0%;
+  padding: 0;
+  background: #1ee0c0;
+  margin: 0px -6px;
+  cursor: pointer;
+  outline: none;
+}
+
+.player__volume-icon {
+  left: 9%;
+  top: 4%;
+  position: relative;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+
+  @include phones {
+    margin-right: 0;
+    top: 19%
+  }
+
+  &.muted>.player__volume-img {
+    display: none;
+  }
+
+  &.muted>.player__volume-img.muted {
+    display: block;
+  }
+}
+
+.player__volume-img.muted {
+  display: none;
+}
+
+.player__volume {
+  position: relative;
+  width: rem(60px);
+  height: rem(6px);
+  background: linear-gradient(to right,
+      #497870 0%, #333 0%);
+  margin-left: rem(60px);
+  border-radius: 10px;
+  top: 6%;
+  cursor: pointer;
+
+  @include phones {
+    top: 0%;
+    width: rem(80px);
+  }
+}
+
+.player__volume-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #497870;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 100ms ease;
+}
+
+.player__volume-button {
+  width: rem(10px);
+  height: rem(10px);
+  top: -2px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0%;
+  padding: 0;
+  background: #1ee0c0;
+  margin: 0px -8px;
+  cursor: pointer;
+  transition: 100ms ease;
+
+  @include phones {
+    top: -1px;
+    margin: 0px -3px;
+  }
+}

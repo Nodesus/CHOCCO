@@ -1,0 +1,117 @@
+.products-menu-section {
+  background: url(/img/decor/main-bar.png) center center / cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu__container {
+  position: initial;
+}
+
+.products-menu-section__title {
+  left: 8%;
+  top: 12%;
+  position: absolute;
+  color: #fff;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+
+  @include phones {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.products-menu__item {
+  display: flex;
+
+  &.active {
+    @include phones {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
+  }
+}
+
+.products-menu__title {
+  width: rem(100px);
+  display: flex;
+  position: relative;
+}
+
+.products-menu__image {
+  height: 100vh;
+  position: absolute;
+  max-width: 100%;
+}
+
+.products-menu__text {
+  text-decoration: none;
+  font-size: rem(48px);
+  line-height: rem(58px);
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  z-index: 1;
+  transform: rotate(180deg);
+  position: absolute;
+  align-self: flex-end;
+  padding-top: rem(39px);
+}
+
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+  z-index: 1;
+}
+
+.products-menu__holder {
+  padding: rem(76px) rem(40px) rem(76px) rem(44px);
+
+  @include tablets {
+    padding: rem(40px);
+  }
+
+  @include phones {
+    padding: rem(20px);
+    padding-right: rem(80px);
+  }
+}
+
+.products-menu__close {
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 18%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.products-menu__close:before,
+.products-menu__close:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: rgb(255, 255, 255);
+  border: none;
+}
+
+.products-menu__close:before {
+  transform: rotate(45deg);
+}
+
+.products-menu__close:after {
+  transform: rotate(-45deg);
+}
