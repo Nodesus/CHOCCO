@@ -415,6 +415,7 @@ template {
   line-height: 1;
   text-decoration: none;
   border: none;
+  cursor: pointer;
   display: inline-block; }
   .btn--theme--white {
     background: #fff;
