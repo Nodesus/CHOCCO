@@ -1,0 +1,1777 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+.benefit {
+  text-align: center; }
+  @media screen and (max-width: 480px) {
+    .benefit {
+      display: flex;
+      text-align: left; } }
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.11111rem; }
+  @media screen and (max-width: 480px) {
+    .benefit__image-wrapper {
+      margin-bottom: 0;
+      margin-right: 0.66667rem; } }
+
+.benefit__icon-svg {
+  width: 4.16667rem;
+  height: 3.83333rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.benefit__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #292929; }
+  @media screen and (max-width: 480px) {
+    .benefit__title {
+      margin-bottom: 0.55556rem; } }
+
+.benefits__section {
+  position: relative;
+  background: url(/CHOCCO/img/decor/pattern-leaf.png) left top 57% no-repeat; }
+  @media screen and (max-width: 768px) {
+    .benefits__section {
+      background: url(/CHOCCO/img/decor/pattern-leaf.png) left top 3% no-repeat; } }
+  @media screen and (max-width: 480px) {
+    .benefits__section {
+      background: none; } }
+  .benefits__section:before {
+    content: '';
+    background: url(/CHOCCO/img/decor/choco-berry.png) center center/contain no-repeat;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    width: 8.94444rem;
+    height: 16.66667rem;
+    z-index: 1; }
+    @media screen and (max-width: 480px) {
+      .benefits__section:before {
+        background: none; } }
+
+.benefits {
+  display: flex; }
+  @media screen and (max-width: 480px) {
+    .benefits {
+      flex-direction: column;
+      justify-content: flex-start; } }
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative; }
+  @media screen and (max-width: 480px) {
+    .benefits__item {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 2.33333rem; }
+      .benefits__item:last-child {
+        margin-bottom: 0; } }
+  @media screen and (max-width: 768px) {
+    .benefits__item {
+      padding: 0 0.77778rem; } }
+  .benefits__item:first-child {
+    padding-left: 0; }
+  .benefits__item:last-child {
+    padding-right: 0; }
+    .benefits__item:last-child:before {
+      display: none; }
+  .benefits__item:before {
+    content: '';
+    background: url(/CHOCCO/img/decor/separator.png) center center/contain no-repeat;
+    position: absolute;
+    top: 3.05556rem;
+    right: 0;
+    transform: translateX(50%);
+    width: 3.72222rem;
+    height: 1.16667rem; }
+    @media screen and (max-width: 768px) {
+      .benefits__item:before {
+        background: none; } }
+    @media screen and (max-width: 480px) {
+      .benefits__item:before {
+        background: none; } }
+
+.btn {
+  font-size: 0.88889rem;
+  font-weight: 800;
+  padding: 1.16667rem 2.27778rem;
+  text-transform: uppercase;
+  border-radius: 5.55556rem;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  display: inline-block; }
+  .btn--theme--white {
+    background: #fff;
+    color: #0b4d3c; }
+    .btn--theme--white:hover {
+      background: #0b4d3c;
+      color: #fff; }
+  .btn--theme--dark {
+    background: #0b4d3c;
+    color: #fff; }
+  .btn--theme--green {
+    background: #0b4d3c;
+    color: #fff; }
+    .btn--theme--green:hover {
+      background: #fff;
+      color: #0b4d3c; }
+  .btn--theme--transparent {
+    background: transparent;
+    color: #292929;
+    text-transform: none; }
+    .btn--theme--transparent:hover {
+      color: #497870; }
+
+.contacts__container {
+  min-height: 100%;
+  min-width: 100%; }
+
+.map {
+  height: 100%;
+  width: 100%; }
+
+.feature {
+  display: flex; }
+
+.feature__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.38889rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.feature__icon-svg {
+  width: 100%;
+  height: 100%;
+  fill: #C6F7FF; }
+
+.feature__text {
+  font-size: 0.88889rem;
+  max-width: 4.72222rem;
+  line-height: 1rem; }
+
+.features {
+  display: flex; }
+
+.features__item {
+  margin-right: 2.55556rem; }
+  .features__item:last-child {
+    margin-right: 0; }
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  z-index: 100;
+  right: calc(50% - 510px); }
+  @media screen and (max-width: 768px) {
+    .fixed-menu {
+      display: none; } }
+
+.fixed-menu--shadowed > .fixed-menu__list > .fixed-menu__item > .fixed-menu__link {
+  border-color: transparent; }
+  .fixed-menu--shadowed > .fixed-menu__list > .fixed-menu__item > .fixed-menu__link.fixed-menu__link:before {
+    background: #000; }
+
+.fixed-menu--shadowed > .fixed-menu__list > .fixed-menu__item.fixed-menu__item--active > .fixed-menu__link {
+  border-color: #000; }
+  .fixed-menu--shadowed > .fixed-menu__list > .fixed-menu__item.fixed-menu__item--active > .fixed-menu__link.fixed-menu__link:before {
+    background: #000; }
+
+.fixed-menu__item {
+  margin-bottom: 0.27778rem; }
+  .fixed-menu__item--active .fixed-menu__link {
+    border-color: #fff; }
+
+.fixed-menu__link {
+  width: 0.88889rem;
+  height: 0.88889rem;
+  border-radius: 50%;
+  border: 0.05556rem solid transparent;
+  display: block;
+  position: relative;
+  left: 51%; }
+  .fixed-menu__link:before {
+    content: "";
+    display: block;
+    width: 0.33333rem;
+    height: 0.33333rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.footer {
+  font-size: 1.16667rem;
+  position: absolute;
+  bottom: -800%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0.94444rem 0; }
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media screen and (max-width: 480px) {
+    .footer__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+
+.address {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33333rem; }
+  @media screen and (max-width: 480px) {
+    .address {
+      margin-bottom: 0.33333rem; } }
+
+@media screen and (max-width: 480px) {
+  .footer__phone-number {
+    padding: 6% 19%; } }
+
+.socials {
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 480px) {
+    .socials {
+      margin-bottom: 17px; } }
+
+.socials__item {
+  max-width: 1.33333rem;
+  max-height: 1.33333rem;
+  margin-right: 0.77778rem;
+  fill: #B3B3B3; }
+  .socials__item:last-child {
+    margin-right: 0; }
+  .socials__item:hover {
+    fill: black; }
+
+.form-modal {
+  display: none; }
+  .form-modal.error__modal .form-modal__content {
+    color: red !important; }
+  .form-modal.fancybox-button {
+    padding: 0 !important; }
+  .form-modal .fancybox-button {
+    display: none; }
+  .form-modal__container {
+    background: #fff;
+    padding: 35px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form-modal__content {
+    margin-bottom: 15px;
+    color: #000; }
+
+.input__error {
+  border-color: red !important; }
+
+.form {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .form {
+      flex-direction: column;
+      max-width: 25.88889rem;
+      margin: 0 auto; } }
+
+.form__col {
+  flex: 1;
+  margin-right: 1.11111rem; }
+  .form__col:last-child {
+    margin-right: 0; }
+
+.form__col {
+  margin-right: 1.5rem; }
+  @media screen and (max-width: 768px) {
+    .form__col {
+      margin-right: 0; } }
+
+.form__row {
+  display: flex;
+  margin-bottom: 1rem; }
+
+.form__block {
+  flex: 1;
+  margin-right: 1.11111rem; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__input {
+  font-size: 0.77778rem;
+  font-family: Open Sans;
+  width: 100%;
+  padding: 1rem 0.66667rem;
+  border: solid 0.16667rem transparent;
+  border-radius: 0.22222rem; }
+  @media screen and (max-width: 768px) {
+    .form__input {
+      padding: 0.44444rem 0.66667rem; } }
+  .form__input--textarea {
+    height: 8.77778rem;
+    resize: none;
+    margin-bottom: 1rem; }
+    @media screen and (max-width: 768px) {
+      .form__input--textarea {
+        height: 4.55556rem;
+        margin-bottom: 0; } }
+  .form__input:focus {
+    border-color: #dee2bd;
+    outline: none; }
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 480px) {
+    .form__controls {
+      justify-content: center; } }
+
+@media screen and (max-width: 480px) {
+  .form__buttons {
+    display: flex;
+    justify-content: center; } }
+
+.hamburger {
+  width: 1.55556rem;
+  height: 1.33333rem;
+  position: fixed;
+  margin: 10px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 300;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+      right: 5%; }
+      .hamburger.open {
+        position: fixed; } }
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out; }
+
+.hamburger span:nth-child(1) {
+  top: 0px; }
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: 9px; }
+
+.hamburger span:nth-child(4) {
+  top: 18px; }
+
+.hamburger.open span:nth-child(1) {
+  top: 6px;
+  width: 0%;
+  left: 50%; }
+
+.hamburger.open span:nth-child(2) {
+  transform: rotate(45deg); }
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+.hamburger.open span:nth-child(4) {
+  top: 6px;
+  width: 0%;
+  left: 50%; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.logo__pic {
+  max-width: none; }
+
+.menu {
+  margin: 0 30px;
+  padding-top: 5px; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-color: #333537; } }
+  @media screen and (max-width: 480px) {
+    .menu {
+      display: none; } }
+
+.menu--active {
+  display: block;
+  z-index: 200; }
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .menu__list {
+      flex-direction: column;
+      height: 100%; } }
+
+.menu__item {
+  margin-right: 1.55556rem;
+  margin-bottom: 10px; }
+  .menu__item:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .menu__item {
+      margin-right: 0;
+      font-size: 2rem;
+      line-height: 4rem; } }
+
+.menu__link {
+  text-decoration: none; }
+  .menu__link:hover {
+    text-decoration: underline; }
+
+.phone-number {
+  font-size: 1.33333rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: color .3s; }
+  .phone-number:hover {
+    color: #497870; }
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .phone-number.header__phone-number {
+    display: none; } }
+
+.phone-number__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.77778rem;
+  height: 0.77778rem;
+  flex-shrink: 0;
+  margin-right: 0.27778rem; }
+
+.phone-number__icon-elem {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #fff; }
+  .phone-number__icon-elem--active {
+    fill: #497870; }
+
+.headline {
+  text-align: center;
+  margin-bottom: 2.66667rem; }
+
+.headline__title {
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 768px) {
+    .headline__title {
+      margin-bottom: 0.55556rem; } }
+
+.headline__subtitle {
+  padding: 0 26%; }
+  @media screen and (max-width: 768px) {
+    .headline__subtitle {
+      padding: 0 22%; } }
+  @media screen and (max-width: 480px) {
+    .headline__subtitle {
+      padding: 0 8%; } }
+
+.hero {
+  background: url(/CHOCCO/img/decor/pattern-1.png) right bottom no-repeat;
+  background-color: #61c4d9;
+  height: 100%;
+  min-height: 36.22222rem;
+  color: #fff;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .hero {
+      background: url(/CHOCCO/img/decor/pattern-1.png) right bottom 90% no-repeat;
+      background-color: #61c4d9; } }
+  @media screen and (max-width: 480px) {
+    .hero {
+      background: url(/CHOCCO/img/decor/pattern-1.png) right top no-repeat;
+      background-color: #61c4d9;
+      background-size: 85%; } }
+
+.hero__container {
+  background: url(/CHOCCO/img/decor/chocolates.png) center right/50% auto no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 1.33333rem;
+  padding-bottom: 2.5rem; }
+  @media screen and (max-width: 768px) {
+    .hero__container {
+      background: none; } }
+  @media screen and (max-width: 480px) {
+    .hero__container {
+      background: none; } }
+  .hero__container:before {
+    content: '';
+    position: absolute;
+    bottom: -2.5rem;
+    left: -3%;
+    background: url(/CHOCCO/img/decor/leaf-1.png) center center/contain no-repeat;
+    width: 3.27778rem;
+    height: 6.22222rem; }
+  .hero__container:after {
+    content: '';
+    position: absolute;
+    bottom: -2.5rem;
+    right: -10%;
+    background: url(/CHOCCO/img/decor/composition.png) center center/contain no-repeat;
+    width: 25.83333rem;
+    height: 20.16667rem; }
+  @media screen and (max-width: 768px) {
+    .hero__container:before, .hero__container:after {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .hero__container:before, .hero__container:after {
+      display: none; } }
+
+.hero__title-section {
+  width: 43%; }
+  @media screen and (max-width: 768px) {
+    .hero__title-section {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .hero__title-section:before {
+        content: '';
+        background: url(/CHOCCO/img/decor/chocco-comp.png) center center/contain no-repeat;
+        margin-bottom: 0.88889rem;
+        width: 26.11111rem;
+        height: 26.66667rem; } }
+  @media screen and (max-width: 480px) {
+    .hero__title-section {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .hero__title-section:before {
+        content: '';
+        width: 19.22222rem;
+        height: 19.77778rem;
+        background: url(/CHOCCO/img/decor/chocco-comp.png) center center/contain no-repeat;
+        margin-bottom: 1.11111rem; } }
+
+.hero__main-title {
+  font-size: 2.66667rem;
+  line-height: 3.22222rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.94444rem; }
+
+.hero__title-desc {
+  font-size: 1.16667rem;
+  margin-bottom: 2.94444rem;
+  padding-right: 10%; }
+  @media screen and (max-width: 768px) {
+    .hero__title-desc {
+      padding-right: 0;
+      margin-bottom: 1.27778rem;
+      max-width: 20.77778rem; } }
+  @media screen and (max-width: 480px) {
+    .hero__title-desc {
+      padding-right: 0;
+      margin-bottom: 1.44444rem;
+      max-width: 20.77778rem; } }
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .hero__icons-section {
+    display: none; } }
+
+.interactive-avatar {
+  flex-shrink: 0;
+  width: 4.44444rem;
+  height: 4.44444rem;
+  border: 0.22222rem solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0.33333rem; }
+  .interactive-avatar.active {
+    border: 0.22222rem solid #0f5a47; }
+  .interactive-avatar:hover {
+    border: 0.22222rem solid #0f5a47; }
+  .interactive-avatar:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .interactive-avatar {
+      margin-right: 10px; } }
+
+.interactive-avatar__link {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+html {
+  font-size: 18px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 2vmax; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 2vmax; } }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  color: #666666; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.maincontent {
+  height: 100%;
+  transform: translateY();
+  transition: transform 1s;
+  will-change: transform; }
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  position: relative;
+  width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: inherit; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.order-section {
+  background-image: url(/CHOCCO/img/decor/order-bg.png);
+  background-size: cover; }
+
+.order__container:before {
+  content: '';
+  position: absolute;
+  bottom: -0.55556rem;
+  left: -2%;
+  background: url(/CHOCCO/img/decor/order-small-berry.png) center center/contain no-repeat;
+  width: 2.66667rem;
+  height: 2.66667rem; }
+
+.order__container:after {
+  content: '';
+  position: absolute;
+  bottom: -1.94444rem;
+  right: -4%;
+  background: url(/CHOCCO/img/decor/order-leaf.png);
+  width: 7.55556rem;
+  height: 10.55556rem; }
+
+@media screen and (max-width: 768px) {
+  .order__container:before, .order__container:after {
+    display: none; } }
+
+.player {
+  width: 36.77778rem;
+  display: block;
+  position: relative; }
+  .player.player__active > .player__controls > .player__start {
+    height: 15px;
+    background: transparent;
+    border-color: #fff;
+    will-change: border-width;
+    cursor: pointer;
+    border-style: double;
+    border-width: 0px 0px 0px 14px; }
+
+.player__video {
+  width: 100%;
+  height: 100%;
+  outline: none; }
+
+.player__controls {
+  width: 100%;
+  height: 2.22222rem;
+  background-color: #404040;
+  position: absolute;
+  bottom: 0%;
+  align-items: center;
+  padding: 0.55556rem 1.11111rem;
+  display: flex;
+  justify-content: space-between; }
+
+.player__start {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 14px solid #404040;
+  border-right-width: 0;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  border-left-color: #fff;
+  padding: 0;
+  border-radius: 10%;
+  outline: none;
+  margin: 0 auto;
+  left: 4%;
+  position: absolute;
+  top: 30%;
+  cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .player__start {
+      top: 18%; } }
+
+.player__playback {
+  position: relative;
+  width: 24.77778rem;
+  height: 0.33333rem;
+  background: linear-gradient(to right, #497870 0%, #333 0%);
+  margin-left: 3.33333rem;
+  border-radius: 10px;
+  top: 6%;
+  cursor: pointer; }
+
+.player__playback-line {
+  position: relative;
+  width: 0;
+  height: 100%;
+  background: #497870;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms; }
+
+.player__playback-button {
+  width: 0.55556rem;
+  height: 0.55556rem;
+  top: -2px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0%;
+  padding: 0;
+  background: #1ee0c0;
+  margin: 0px -6px;
+  cursor: pointer;
+  outline: none; }
+
+.player__volume-icon {
+  left: 9%;
+  top: 4%;
+  position: relative;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; }
+  @media screen and (max-width: 480px) {
+    .player__volume-icon {
+      margin-right: 0;
+      top: 19%; } }
+  .player__volume-icon.muted > .player__volume-img {
+    display: none; }
+  .player__volume-icon.muted > .player__volume-img.muted {
+    display: block; }
+
+.player__volume-img.muted {
+  display: none; }
+
+.player__volume {
+  position: relative;
+  width: 3.33333rem;
+  height: 0.33333rem;
+  background: linear-gradient(to right, #497870 0%, #333 0%);
+  margin-left: 3.33333rem;
+  border-radius: 10px;
+  top: 6%;
+  cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .player__volume {
+      top: 0%;
+      width: 4.44444rem; } }
+
+.player__volume-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #497870;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 100ms ease; }
+
+.player__volume-button {
+  width: 0.55556rem;
+  height: 0.55556rem;
+  top: -2px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0%;
+  padding: 0;
+  background: #1ee0c0;
+  margin: 0px -8px;
+  cursor: pointer;
+  transition: 100ms ease; }
+  @media screen and (max-width: 480px) {
+    .player__volume-button {
+      top: -1px;
+      margin: 0px -3px; } }
+
+.products-menu-section {
+  background: url(/CHOCCO/img/decor/main-bar.png) center center/cover no-repeat;
+  position: relative;
+  color: #fff; }
+
+.products-menu__container {
+  position: initial; }
+
+.products-menu-section__title {
+  left: 8%;
+  top: 12%;
+  position: absolute;
+  color: #fff; }
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex; }
+  @media screen and (max-width: 480px) {
+    .products-menu {
+      width: 100%;
+      justify-content: flex-end; } }
+
+.products-menu__item {
+  display: flex; }
+  @media screen and (max-width: 480px) {
+    .products-menu__item.active {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%; } }
+
+.products-menu__title {
+  width: 5.55556rem;
+  display: flex;
+  position: relative; }
+
+.products-menu__image {
+  height: 100vh;
+  position: absolute;
+  max-width: 100%; }
+
+.products-menu__text {
+  text-decoration: none;
+  font-size: 2.66667rem;
+  line-height: 3.22222rem;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  z-index: 1;
+  transform: rotate(180deg);
+  position: absolute;
+  align-self: flex-end;
+  padding-top: 2.16667rem; }
+
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+  z-index: 3; }
+
+.products-menu__holder {
+  padding: 4.22222rem 2.22222rem 4.22222rem 2.44444rem; }
+  @media screen and (max-width: 768px) {
+    .products-menu__holder {
+      padding: 2.22222rem; } }
+  @media screen and (max-width: 480px) {
+    .products-menu__holder {
+      padding: 1.11111rem;
+      padding-right: 4.44444rem; } }
+
+.products-menu__close {
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 18%;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+.products-menu__close:before,
+.products-menu__close:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: white;
+  border: none; }
+
+.products-menu__close:before {
+  transform: rotate(45deg); }
+
+.products-menu__close:after {
+  transform: rotate(-45deg); }
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none; }
+  .radio--checkbox {
+    margin-bottom: 1.44444rem; }
+    .radio--checkbox .radio__visible {
+      border-radius: 0.22222rem; }
+      .radio--checkbox .radio__visible:before {
+        background: url(/CHOCCO/img/svg/Vector.svg) center center/110% no-repeat; }
+
+.radio__elem {
+  display: none; }
+  .radio__elem:checked ~ .radio__visible::before {
+    display: block; }
+
+.radio__visible {
+  width: 1.44444rem;
+  height: 1.44444rem;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 0.55556rem; }
+  .radio__visible::before {
+    content: "";
+    width: 0.77778rem;
+    height: 0.77778rem;
+    background: #365a49;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.radio__title {
+  margin-right: 1.27778rem; }
+
+.form__controls-radio {
+  margin-bottom: 1.05556rem; }
+
+.reviews-section {
+  position: relative;
+  background: url(/CHOCCO/img/decor/strawberry.png) right 3% top 4% no-repeat; }
+  @media screen and (max-width: 480px) {
+    .reviews-section {
+      background: url(/CHOCCO/img/decor/strawberry.png) right -2% top 1% contain no-repeat;
+      background-size: 30%; } }
+  .reviews-section:before {
+    content: '';
+    position: absolute;
+    bottom: -10.55556rem;
+    left: 0%;
+    background: url(/CHOCCO/img/decor/pattern-leaf-2.png) center center/contain no-repeat;
+    width: 5.77778rem;
+    height: 17.88889rem; }
+  .reviews-section:after {
+    content: '';
+    position: absolute;
+    bottom: -4.44444rem;
+    left: 0;
+    background: url(/CHOCCO/img/decor/berry1.png) center center/contain no-repeat;
+    width: 7.55556rem;
+    height: 10.77778rem; }
+
+.reviews__display {
+  background: #F8FAF9 url(/CHOCCO/img/decor/drawn-berry.png) right top no-repeat;
+  padding: 2.77778rem 2.5rem 1.88889rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.83333rem;
+  min-height: 15.55556rem; }
+  @media screen and (max-width: 480px) {
+    .reviews__display {
+      background: #F8FAF9 url(/CHOCCO/img/decor/drawn-berry.png) right top 10% no-repeat;
+      background-size: 25%; } }
+  .reviews__display:before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3.61111rem; }
+
+.reviews__display-inner {
+  display: flex;
+  position: absolute;
+  opacity: 0; }
+  @media screen and (max-width: 768px) {
+    .reviews__display-inner {
+      flex-direction: column;
+      text-align: center;
+      align-items: center; } }
+  .reviews__display-inner.active {
+    position: static;
+    pointer-events: unset;
+    opacity: 1; }
+
+.reviews__avatar {
+  width: 14.11111rem;
+  height: 14.44444rem;
+  margin-right: 2.11111rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__avatar {
+      margin-right: 0;
+      width: 130px;
+      height: 130px;
+      margin-bottom: 1.77778rem; } }
+  @media screen and (max-width: 768px) {
+    .reviews__avatar {
+      margin-right: 0;
+      margin-bottom: 1rem; } }
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.reviews__content {
+  flex: 1;
+  padding: 1.88889rem 6.44444rem 0rem 0rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__content {
+      padding: 0; } }
+
+.reviews__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.55556rem;
+  color: #292929; }
+
+.reviews__text {
+  margin-bottom: 0.55556rem; }
+
+.reviews__author {
+  font-weight: bold;
+  color: #292929; }
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+
+.section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 36.22222rem; }
+  .section--font-color--green {
+    color: #497870; }
+    .section--font-color--green .section__title {
+      color: inherit; }
+
+.section__title {
+  font-size: 2.66667rem;
+  font-weight: bold;
+  margin-bottom: 3.33333rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929; }
+  .section__title--green {
+    color: #365A49; }
+  @media screen and (max-width: 480px) {
+    .section__title {
+      font-size: 2.22222rem; } }
+
+.slider__section {
+  background: #F8FAF9;
+  position: relative; }
+  .slider__section:before {
+    content: '';
+    position: absolute;
+    background: url(/CHOCCO/img/decor/leaf-3.png) right/contain no-repeat;
+    top: 80%;
+    right: 0%;
+    width: 8.44444rem;
+    height: 19.55556rem; }
+  .slider__section:after {
+    content: '';
+    position: absolute;
+    background: url(/CHOCCO/img/decor/blueberry.png) right/contain no-repeat;
+    top: 97%;
+    right: 0%;
+    width: 5.77778rem;
+    height: 4.77778rem; }
+
+.sliders__arrow {
+  margin-left: 0.55556rem;
+  stroke: black; }
+  .sliders__arrow:last-child {
+    margin-right: 0.55556rem; }
+
+.slider__container {
+  display: flex;
+  position: relative;
+  top: 3%; }
+
+.slider__list {
+  display: flex;
+  position: relative;
+  will-change: right; }
+  .slider__list-wrap {
+    overflow: hidden;
+    display: flex; }
+    .slider__list-wrap .bx-wrapper {
+      margin: 0 auto;
+      border: 0;
+      background: transparent;
+      box-shadow: none; }
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translate(50%, 0); }
+  .slider__btn-right {
+    right: 2%; }
+  .slider__btn-left {
+    left: -3%; }
+
+.slider__img {
+  margin: auto; }
+
+.slide {
+  display: flex;
+  width: 53.33333rem; }
+  @media screen and (max-width: 768px) {
+    .slide {
+      flex-direction: column; } }
+  .slide__info {
+    width: 40%;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .slide__info {
+        width: 100%;
+        align-items: center;
+        text-align: center; } }
+  .slide__details {
+    width: 5.05556rem;
+    height: 5.05556rem;
+    background: #86C3D7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    fill: #fff;
+    margin-bottom: 1.27778rem;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .slide__details {
+        display: none; } }
+    .slide__details-window-close {
+      margin-bottom: 4px; }
+    .slide__details-title {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.77778rem;
+      font-weight: bold; }
+  .slide__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #292929;
+    text-transform: uppercase; }
+  .slide__desc-text {
+    color: #666666;
+    margin-bottom: 1.33333rem; }
+  .slide__values-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.33333rem; }
+    .slide__values-row.ccal-row {
+      margin-right: 2.44444rem;
+      flex-direction: column; }
+    .slide__values-row.weigth-row {
+      flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .slide__values-row {
+        justify-content: center; } }
+  .slide__values-number {
+    color: #000;
+    font-weight: bold; }
+  .slide__value-row {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly; }
+    @media screen and (max-width: 768px) {
+      .slide__value-row {
+        justify-content: center; } }
+  .slide__btn {
+    position: relative;
+    width: 8.66667rem;
+    height: 3.33333rem; }
+  .slide__price {
+    font-size: 3.33333rem;
+    font-weight: r300;
+    color: #000; }
+    @media screen and (max-width: 768px) {
+      .slide__price {
+        margin-right: 1.66667rem; } }
+
+.slide__structure {
+  position: absolute;
+  min-width: 15.16667rem;
+  left: -9999px;
+  opacity: 0;
+  top: 0;
+  background-color: #f3f3f3;
+  font-size: 16px;
+  line-height: 1.33333rem;
+  padding: 0.66667rem 0.83333rem;
+  border-radius: 4px;
+  transition: opacity 0.3s ease-out; }
+
+.slide__structure-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.slide__structure-img {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+  flex-shrink: 0;
+  margin-right: 0.88889rem; }
+
+.slide__structure-weigth {
+  margin-left: auto; }
+
+.slide__details:hover .slide__structure {
+  left: 100%;
+  opacity: 1; }
+
+.team__section:before {
+  content: "";
+  position: absolute;
+  background: url(/CHOCCO/img/decor/strawberry-2-team.png) left bottom/contain no-repeat;
+  width: 5.77778rem;
+  height: 6.33333rem;
+  z-index: 100;
+  left: 4%;
+  bottom: -305%; }
+
+.team {
+  display: flex;
+  align-items: flex-start; }
+  @media screen and (max-width: 768px) {
+    .team.team--version--desctop {
+      display: none; } }
+  .team__item {
+    position: relative;
+    flex: 1;
+    margin-right: 2%;
+    text-align: center; }
+    .team__item:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .team__item {
+        position: unset;
+        margin-right: 0;
+        margin-bottom: 0.66667rem; }
+        .team__item:last-child {
+          margin-bottom: 0; } }
+  .team__member {
+    display: flex;
+    margin-bottom: 1.16667rem;
+    justify-content: center; }
+    .team__member-pic {
+      left: 0;
+      top: 0;
+      width: 100%;
+      max-width: 12.22222rem;
+      max-height: 16.11111rem; }
+  .team__title {
+    display: inline-block;
+    border: none;
+    background-color: #fff;
+    text-align: center;
+    outline: none;
+    margin-bottom: 0.44444rem;
+    font-size: 1.16667rem;
+    font-weight: bold; }
+    .team__title:before {
+      content: '\25BC';
+      float: right;
+      position: relative;
+      right: -6%;
+      transition: transform .35s;
+      color: #365A49;
+      top: 0.22222rem;
+      font-size: 0.66667rem; }
+    .team__title--active:before {
+      transform: rotate(180deg); }
+  .team__content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height .3s; }
+    @media screen and (max-width: 768px) {
+      .team__content {
+        position: unset; } }
+    .team__content-role {
+      color: #000;
+      margin-bottom: 0.22222rem; }
+      @media screen and (max-width: 768px) {
+        .team__content-role {
+          font-weight: bold; } }
+    .team__content p {
+      color: #666666;
+      font-weight: 300; }
+
+.team--version--mobile {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .team--version--mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.video-section {
+  align-items: center;
+  background: url(/CHOCCO/img/decor/bg-leaf.png) right 20% top 20% no-repeat #F8FAF9; }
+  @media screen and (max-width: 768px) {
+    .video-section {
+      background: url(/CHOCCO/img/decor/bg-leaf.png) right 5% top 30% no-repeat #F8FAF9; } }
+  .video-section:before {
+    content: "";
+    background: url(/CHOCCO/img/decor/before-leaf.png) left bottom/contain no-repeat;
+    z-index: 100;
+    width: 4rem;
+    height: 7.5rem;
+    position: absolute;
+    left: 20%;
+    bottom: -590%; }
+    @media screen and (max-width: 768px) {
+      .video-section:before {
+        left: -3%; } }
+  .video-section:after {
+    content: "";
+    background: url(/CHOCCO/img/decor/after-leaf.png) center center/contain no-repeat;
+    z-index: 100;
+    width: 10.88889rem;
+    height: 14.66667rem;
+    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: -610%; }
+
+.video-section__box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto; }
